@@ -34,3 +34,10 @@ def add_score(score, user_direction, user_distance):
     if user_direction == "i":
         score += int(user_distance)
     return score
+
+#호랑이 이동 구현
+def move_tiger(tiger_cur_loc): 
+    tiger_new_loc = tiger_cur_loc - 4
+    if tiger_new_loc < 0:
+        tiger_new_loc = 1
+    return tiger_new_loc
