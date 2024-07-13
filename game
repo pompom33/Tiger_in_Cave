@@ -1,2 +1,7 @@
 #플레이어 이동거리
 possible_distance = [1, 2, 3]
+
+def initialize_tiger(): #호랑이 초기 위치 설정
+    import random
+    tiger_first_loc = random.randint(15, 30)
+    return tiger_first_loc
