@@ -16,3 +16,15 @@ def user_direction_input():
 def user_distance_input(): 
     user_distance = input("📢얼마나 이동하시겠습니까?")
     return user_distance
+
+#플레이어 이동 구현
+def move_player(player_cur_loc, user_direction, user_distance): 
+    player_old_loc = player_cur_loc
+    if user_direction == "i":
+        player_cur_loc += int(user_distance)
+    if user_direction == "o":
+        player_cur_loc -= int(user_distance)
+    player_new_loc = int(player_cur_loc)
+    if player_new_loc <= 0:
+        player_new_loc = 0
+    return player_new_loc
