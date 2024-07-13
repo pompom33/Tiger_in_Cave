@@ -1,11 +1,18 @@
 #플레이어 이동거리
 possible_distance = [1, 2, 3]
 
-def initialize_tiger(): #호랑이 초기 위치 설정
+#호랑이 초기 위치 설정
+def initialize_tiger(): 
     import random
     tiger_first_loc = random.randint(15, 30)
     return tiger_first_loc
 
-def user_direction_input(): # 플레이어 이동방향
+# 플레이어 이동방향
+def user_direction_input(): 
     user_direction = input("📢동굴에 들어가려면 i, 나오려면 o를 입력하세요")
     return user_direction
+
+#플레이어 이동거리
+def user_distance_input(): 
+    user_distance = input("📢얼마나 이동하시겠습니까?")
+    return user_distance
