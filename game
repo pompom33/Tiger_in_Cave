@@ -5,3 +5,7 @@ def initialize_tiger(): #호랑이 초기 위치 설정
     import random
     tiger_first_loc = random.randint(15, 30)
     return tiger_first_loc
+
+def user_direction_input(): # 플레이어 이동방향
+    user_direction = input("📢동굴에 들어가려면 i, 나오려면 o를 입력하세요")
+    return user_direction
